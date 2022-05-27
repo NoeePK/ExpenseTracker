@@ -1,0 +1,73 @@
+
+form {
+    text-align: center;
+    color: $primaryColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .input--items {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+input {
+    border: 2px solid $primaryColor;
+    border-radius: 6px;
+    padding: .3em .3em .3em .3em;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $tertiaryColor;
+    }
+}
+
+
+
+table {
+
+    color: $primaryColor;
+    border: 1px solid $primaryColor;
+    border-collapse: collapse;
+    margin: auto;
+
+    td,
+    th,
+    tr {
+        border: 1px solid black;
+        text-align: center;
+        padding: .5em 1em .5em 1em;
+    }
+}
+
+th {
+    background-color: rgb(175, 190, 143);
+}
+
+caption {
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+button {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    border: 5px solid rgb(95, 99, 79);
+    border-radius: 40px;
+    background-color: rgb(175, 190, 143) ;
+    padding: 1em;
+    margin: 1em 2em 1em 2em;
+    transform: scale(1);
+    transition: all 350ms ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.3);
+
+    }
+}
