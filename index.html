@@ -23,15 +23,25 @@
                 </div>
                 <div class="amount">
                     <label for="amount">Montant</label>
-                    <input type="number" id="amount" name="amount" required>
+                    <input type="number" id="amount" name="amount" maxlength="4" step="5" placeholder="0" required>
                 </div>
+                <div class="type">
+                    <label for="type">Type</label>
+                    <select name="type" id="type">
+                        <option value="CB">CB</option>
+                        <option value="Liquide">Liquide</option>
+                        <option value="chèque">Chèque</option>
+                        <option value="ticket restaurant">Ticket restaurant</option>
+                    </select>
+                </div>
+
                 <div class="motif">
                     <label for="motif">Motif</label>
-                    <input type="text" id="motif" name="motif" minlength="10" placeholder="Motif de la dépense"
+                    <input type="text" id="motif" name="motif" minlength="5" maxlength="20" size="15" placeholder="Motif de la dépense"
                         required>
                 </div>
-            </div>
-            <button type="submit">Ajouter</button>
+                <button type="submit">Ajouter</button>
+            </div> 
         </form>
 
     </section>
@@ -42,12 +52,14 @@
             <thead>
                 <th>Date</th>
                 <th>Montant</th>
+                <th>Type</th>
                 <th>Motif</th>
             </thead>
             <tr class="expense">
 
                 <td>2021-05-30</td>
                 <td>137</td>
+                <td>Liquide</td>
                 <td>Assurance</td>
 
             </tr>

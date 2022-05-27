@@ -1,0 +1,39 @@
+.input--items {
+    display: grid;
+    grid-template-columns: repeat(5, 10vw);
+    grid-template-rows: repeat(3, 8vh);
+    gap: 6%;
+    padding: .5em 2em;
+}
+
+.date {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.amount {
+    grid-column: 3;
+    grid-row: 1;
+
+    > input {
+        width: 80%;
+    }
+
+}
+
+.type {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.motif {
+    grid-column: 3;
+    grid-row: 2;
+    
+}
+
+button {
+    grid-column: 2;
+    grid-row: 3;
+}
+
